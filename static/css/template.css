@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #71f5a5;
+}
+li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 30px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+  }

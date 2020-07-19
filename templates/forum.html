@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <h1> Welcome to the Community </h1>
+    <div class="topic">
+      <p class="header"><a href="{{ url_for('wistem') }}">Environmentalism</a></p>
+      <p class="description">This topic is for people to discuss environment related problems and coordinate efforts to resolve them.</p>
+    </div>
+    <div class="topic">
+      <p class="header"><a href="{{ url_for('wistem') }}">Women In STEM</a></p>
+      <p class="description">This topic is for women in STEM to come together and support each other in their STEM interests.</p>
+    </div>
+    
+    {% endblock %}
+  </body>
+</html>

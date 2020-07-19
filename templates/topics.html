@@ -1,0 +1,20 @@
+  
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Flask Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1>Topics in {{topic}}</h1>
+    <div class="topic">
+        <p class="header"><a href="{{ url_for('wistemrep') }}">{{topic1}}</a></p>
+       </div>
+      <div class="topic">
+        <p class="header"><a href="{{ url_for('wistemrep') }}">{{topic2}}</a></p>
+       </div>
+    {% endblock %}
+  </body>
+</html>

@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+  
+<!DOCTYPE HTML>
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
+    <title>Flask Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
   <body>
     {% extends "template.html" %}
     {% block content %}
-
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
-
+    <img src="{{url_for('static', filename='image.PNG')}}"/>
+    <h1 class="title">Welcome to Create a Change</h1>
+    <p class="intro">This website was designed to bring people together to fight the society issues we see today. All across the world people are identifying issues in their community that they want to solve but just don't know how to. This website provides those people a community where they can join discussions about their topic of interest to team up creating petitions and supporting causes together. People can also create their own thread if they can not find a relevant one and start a community group devoted to the issue.</p>
+    <p style="text-align: center; font-size: 40px; font-weight: 80px; padding: 20px;">Take a step to create a change - visit the discussion page</p>
     {% endblock %}
   </body>
 </html>

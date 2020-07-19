@@ -1,0 +1,28 @@
+  
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Flask Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1>Check out the discussion</h1>
+      <div class="response">
+        <p class="rep"><b>Lisa:  </b>{{rep1}}</p>
+       </div>
+       <div class="response">
+        <p class="rep"><b>Jessica:  </b>{{rep2}}</p>
+       </div>
+    <p>{{reply}}</p>
+    <form method="POST" action="">
+        <div class="type">Type a reply to join the discussion</div>
+        <input type="text" name="reply">
+        <div class="type">           Name: </div>
+        <input type="text" name="reply">
+        <div class="type"><input type="submit" name="submit" value="Submit"></div>
+    </form>
+    {% endblock %}
+  </body>
+</html>
